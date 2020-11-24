@@ -5,7 +5,7 @@
 #ifndef __AES_CONFIG_H__
 #define __AES_CONFIG_H__
 
-#if  (defined(__linux) || defined(linux)) && !(defined(__ARDUINO_X86__) || defined(__arm__))
+#if (defined(__linux) || defined(linux) || defined(__arm__) ) && !defined(__ARDUINO_X86__)
 
   #define AES_LINUX
 
